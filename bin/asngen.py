@@ -36,7 +36,7 @@ class ASNGenCommand(GeneratingCommand):
             urllib2.install_opener(opener)
 
         try:
-            url = urllib2.urlopen("https://geolite.maxmind.com/download/geoip/database/GeoLite2-ASN-CSV.zip")
+            url = urllib2.urlopen("https://github.com/doktornotor/geolite2/releases/download/v20191224/GeoLite2-ASN-CSV_20191224.zip")
         except:
             raise Exception("Please check app proxy settings")
 
